@@ -1,0 +1,9 @@
+# Ignore standard Maven/IntelliJ garbage.
+
+target/
+*.ipr
+*.iml
+*.iws
+*.ids
+.idea/
+atlassian-ide-plugin.xml
