@@ -30,15 +30,93 @@
  T E S T S
 -------------------------------------------------------
 Running org.myexample.camelissue.ContextStartupTest
-DEBUG o.a.c.s.SpringCamelContext Set the application context classloader to: sun.misc.Launcher$AppClassLoader@7132c515
+DEBUG o.s.t.c.j.SpringJUnit4ClassRunner SpringJUnit4ClassRunner constructor called with [class org.myexample.camelissue.ContextStartupTest].
+DEBUG c.s.AbstractDelegatingSmartContextLoader Delegating to AnnotationConfigContextLoader to process context configuration [ContextConfigurationAttributes@d2467d8 declaringClass = 'org.myexample.camelissue.ContextStartupTest', locations = '{}', classes = '{class org.myexample.camelissue.ContextStartupTest$Context}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+DEBUG o.s.t.c.ContextLoaderUtils Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [org.myexample.camelissue.ContextStartupTest]
+DEBUG o.s.t.c.TestContextManager @TestExecutionListeners is not present for class [org.myexample.camelissue.ContextStartupTest]: using defaults.
+INFO  o.s.t.c.TestContextManager Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+DEBUG o.s.t.a.ProfileValueUtils Retrieved @ProfileValueSourceConfiguration [null] for test class [org.myexample.camelissue.ContextStartupTest]
+DEBUG o.s.t.a.ProfileValueUtils Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.myexample.camelissue.ContextStartupTest]
+DEBUG o.s.t.a.ProfileValueUtils Retrieved @ProfileValueSourceConfiguration [null] for test class [org.myexample.camelissue.ContextStartupTest]
+DEBUG o.s.t.a.ProfileValueUtils Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.myexample.camelissue.ContextStartupTest]
+DEBUG o.s.t.a.ProfileValueUtils Retrieved @ProfileValueSourceConfiguration [null] for test class [org.myexample.camelissue.ContextStartupTest]
+DEBUG o.s.t.a.ProfileValueUtils Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.myexample.camelissue.ContextStartupTest]
+DEBUG DependencyInjectionTestExecutionListener Performing dependency injection for test context [[TestContext@3c9e5e7e testClass = ContextStartupTest, testInstance = org.myexample.camelissue.ContextStartupTest@414dc149, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@57ccc11d testClass = ContextStartupTest, locations = '{}', classes = '{class org.myexample.camelissue.ContextStartupTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+DEBUG c.s.AbstractDelegatingSmartContextLoader Delegating to AnnotationConfigContextLoader to load context from [MergedContextConfiguration@57ccc11d testClass = ContextStartupTest, locations = '{}', classes = '{class org.myexample.camelissue.ContextStartupTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+DEBUG o.s.t.c.s.AbstractGenericContextLoader Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@57ccc11d testClass = ContextStartupTest, locations = '{}', classes = '{class org.myexample.camelissue.ContextStartupTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+DEBUG o.s.c.env.StandardEnvironment Adding [systemProperties] PropertySource with lowest search precedence
+DEBUG o.s.c.env.StandardEnvironment Adding [systemEnvironment] PropertySource with lowest search precedence
+DEBUG o.s.c.env.StandardEnvironment Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+DEBUG o.s.t.c.s.AnnotationConfigContextLoader Registering annotated classes: {class org.myexample.camelissue.ContextStartupTest$Context}
+INFO  o.s.c.s.GenericApplicationContext Refreshing org.springframework.context.support.GenericApplicationContext@52e3d345: startup date [Wed Aug 20 01:28:38 CEST 2014]; root of context hierarchy
+DEBUG o.s.c.s.GenericApplicationContext Bean factory for org.springframework.context.support.GenericApplicationContext@52e3d345: org.springframework.beans.factory.support.DefaultListableBeanFactory@6387f48e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,contextStartupTest.Context]; root of factory hierarchy
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG a.ConfigurationClassBeanDefinitionReader Registering bean definition for @Bean method org.myexample.camelissue.ContextStartupTest$Context.route()
+DEBUG a.ConfigurationClassBeanDefinitionReader Registering bean definition for @Bean method org.myexample.camelissue.ContextStartupTest$Context.processor()
+DEBUG a.ConfigurationClassBeanDefinitionReader Registering bean definition for @Bean method org.myexample.camelissue.ContextStartupTest$Context.camelContext()
+DEBUG a.ConfigurationClassBeanDefinitionReader Registering bean definition for @Bean method org.myexample.camelissue.ContextStartupTest$Context.camelBeanPostProcessor()
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'camelBeanPostProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'camelBeanPostProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'contextStartupTest.Context'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'contextStartupTest.Context'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'contextStartupTest.Context' to allow for resolving potential circular references
+INFO  o.s.c.s.GenericApplicationContext Bean 'contextStartupTest.Context' of type [class org.myexample.camelissue.ContextStartupTest$Context] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'contextStartupTest.Context'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'camelBeanPostProcessor' to allow for resolving potential circular references
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'camelBeanPostProcessor'
+DEBUG o.s.c.s.GenericApplicationContext Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@2bd040e8]
+DEBUG o.s.c.s.GenericApplicationContext Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@420783df]
+INFO  o.s.b.f.s.DefaultListableBeanFactory Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6387f48e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,contextStartupTest.Context,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,route,processor,camelContext,camelBeanPostProcessor]; root of factory hierarchy
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'contextStartupTest.Context'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'route'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'route'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'contextStartupTest.Context'
+DEBUG o.s.b.f.a.InjectionMetadata Registered injected element on class [org.myexample.camelissue.MyRoute]: AutowiredFieldElement for private org.myexample.camelissue.MyProcessor org.myexample.camelissue.MyRoute.myProcessor
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'route' to allow for resolving potential circular references
+DEBUG o.s.b.f.a.InjectionMetadata Processing injected method of bean 'route': AutowiredFieldElement for private org.myexample.camelissue.MyProcessor org.myexample.camelissue.MyRoute.myProcessor
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'processor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'processor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'contextStartupTest.Context'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'processor' to allow for resolving potential circular references
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'camelContext'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'camelContext'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'contextStartupTest.Context'
+DEBUG o.a.c.s.SpringCamelContext Set the application context classloader to: sun.misc.Launcher$AppClassLoader@3c291fc2
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning eagerly cached instance of singleton bean 'route' that is not fully initialized yet - a consequence of a circular reference
 DEBUG o.a.c.s.SpringCamelContext Adding routes from builder: Routes: []
-DEBUG o.a.c.s.SpringCamelContext Set the application context classloader to: sun.misc.Launcher$AppClassLoader@7132c515
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'camelContext' to allow for resolving potential circular references
+DEBUG o.a.c.s.SpringCamelContext Set the application context classloader to: sun.misc.Launcher$AppClassLoader@3c291fc2
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Invoking afterPropertiesSet() on bean with name 'camelContext'
 INFO  o.a.c.s.SpringCamelContext Apache Camel 2.13.2 (CamelContext: camel-1) is starting
-DEBUG o.a.c.s.SpringCamelContext Using ClassResolver=org.apache.camel.impl.DefaultClassResolver@11475cbd, PackageScanClassResolver=org.apache.camel.impl.DefaultPackageScanClassResolver@64198527, ApplicationContextClassLoader=sun.misc.Launcher$AppClassLoader@7132c515
+DEBUG o.a.c.s.SpringCamelContext Using ClassResolver=org.apache.camel.impl.DefaultClassResolver@12b520a, PackageScanClassResolver=org.apache.camel.impl.DefaultPackageScanClassResolver@43170f1f, ApplicationContextClassLoader=sun.misc.Launcher$AppClassLoader@3c291fc2
 INFO  o.a.c.m.ManagedManagementStrategy JMX is enabled
-DEBUG o.a.c.m.DefaultManagementAgent Starting JMX agent on server: com.sun.jmx.mbeanserver.JmxMBeanServer@3fa7e1a8
+DEBUG o.a.c.m.DefaultManagementAgent Starting JMX agent on server: com.sun.jmx.mbeanserver.JmxMBeanServer@324f9231
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=context,name="camel-1"
-DEBUG o.a.c.s.TimerListenerManager Added TimerListener: org.apache.camel.management.mbean.ManagedCamelContext@630d8f68
+DEBUG o.a.c.s.TimerListenerManager Added TimerListener: org.apache.camel.management.mbean.ManagedCamelContext@5ab8695d
 DEBUG a.c.m.DefaultManagementLifecycleStrategy Registering 1 pre registered services
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name="spring-event"
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultTypeConverter
@@ -50,40 +128,161 @@ INFO  o.a.c.i.c.DefaultTypeConverter Loaded 179 type converters
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=EndpointRegistry
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultExecutorServiceManager
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=SharedProducerServicePool
-DEBUG o.a.c.i.SharedProducerServicePool Starting service pool: org.apache.camel.impl.SharedProducerServicePool@93f95d6
+DEBUG o.a.c.i.SharedProducerServicePool Starting service pool: org.apache.camel.impl.SharedProducerServicePool@199fdee7
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultInflightRepository
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultShutdownStrategy
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultPackageScanClassResolver
-DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=eventnotifiers,name=EventNotifier(0x3db0ab45)
-DEBUG o.a.c.s.SpringCamelContext Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@545e2452 to resolve component with name: direct
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=eventnotifiers,name=EventNotifier(0xd867496)
+DEBUG o.a.c.s.SpringCamelContext Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@2286fd2f to resolve component with name: direct
 DEBUG o.a.c.i.DefaultComponentResolver Found component: direct in registry: null
 DEBUG o.a.c.i.DefaultComponentResolver Found component: direct via type: org.apache.camel.component.direct.DirectComponent via: META-INF/services/org/apache/camel/component/direct
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'org.apache.camel.component.direct.DirectComponent'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning eagerly cached instance of singleton bean 'camelContext' that is not fully initialized yet - a consequence of a circular reference
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'org.apache.camel.component.direct.DirectComponent'
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name="direct"
 DEBUG o.a.c.impl.DefaultComponent Creating endpoint uri=[direct://foo], path=[foo]
-DEBUG o.a.c.s.SpringCamelContext direct://foo converted to endpoint: Endpoint[direct://foo] by component: org.apache.camel.component.direct.DirectComponent@2912ee3c
+DEBUG o.a.c.s.SpringCamelContext direct://foo converted to endpoint: Endpoint[direct://foo] by component: org.apache.camel.component.direct.DirectComponent@464286a3
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name="direct://foo"
 INFO  o.a.c.s.SpringCamelContext Apache Camel 2.13.2 (CamelContext: camel-1) is shutting down
-DEBUG o.a.c.s.TimerListenerManager Removed TimerListener: org.apache.camel.management.mbean.ManagedCamelContext@6071e6b8
+DEBUG o.a.c.s.TimerListenerManager Removed TimerListener: org.apache.camel.management.mbean.ManagedCamelContext@30799905
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=context,name="camel-1"
 DEBUG o.a.c.i.DefaultInflightRepository Shutting down with no inflight exchanges.
-DEBUG o.a.c.i.SharedProducerServicePool Stopping service pool: org.apache.camel.impl.SharedProducerServicePool@93f95d6
-DEBUG o.a.camel.util.EventHelper Ignoring notifying event Stopped CamelContext: camel-1. The EventNotifier has not been started yet: org.apache.camel.impl.DefaultRuntimeEndpointRegistry@3db0ab45
+DEBUG o.a.c.i.SharedProducerServicePool Stopping service pool: org.apache.camel.impl.SharedProducerServicePool@199fdee7
+DEBUG o.a.camel.util.EventHelper Ignoring notifying event Stopped CamelContext: camel-1. The EventNotifier has not been started yet: org.apache.camel.impl.DefaultRuntimeEndpointRegistry@d867496
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultTypeConverter
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=SharedProducerServicePool
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=eventnotifiers,name=EventNotifier(0xd867496)
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name="direct://foo"
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=EndpointRegistry
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultPackageScanClassResolver
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name="spring-event"
-DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=eventnotifiers,name=EventNotifier(0x3db0ab45)
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name="direct"
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultInflightRepository
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultShutdownStrategy
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultExecutorServiceManager
 DEBUG o.a.c.u.IntrospectionSupport Clearing cache[size=20, hits=14, misses=20, evicted=0]
-INFO  o.a.c.s.SpringCamelContext Apache Camel 2.13.2 (CamelContext: camel-1) uptime 0.231 seconds
-INFO  o.a.c.s.SpringCamelContext Apache Camel 2.13.2 (CamelContext: camel-1) is shutdown in 0.005 seconds
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.25 sec <<< FAILURE!
-testContext(org.myexample.camelissue.ContextStartupTest)  Time elapsed: 1.121 sec  <<< ERROR!
+INFO  o.a.c.s.SpringCamelContext Apache Camel 2.13.2 (CamelContext: camel-1) uptime 0.266 seconds
+INFO  o.a.c.s.SpringCamelContext Apache Camel 2.13.2 (CamelContext: camel-1) is shutdown in 0.009 seconds
+INFO  o.s.b.f.s.DefaultListableBeanFactory Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6387f48e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,contextStartupTest.Context,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,route,processor,camelContext,camelBeanPostProcessor]; root of factory hierarchy
+ERROR o.s.t.c.TestContextManager Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1c461984] to prepare test instance [org.myexample.camelissue.ContextStartupTest@414dc149]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99) ~[spring-test-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122) ~[spring-test-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109) ~[spring-test-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75) ~[spring-test-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321) ~[spring-test-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211) [spring-test-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288) [spring-test-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284) [spring-test-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231) [spring-test-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88) [spring-test-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71) [spring-test-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174) [spring-test-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112) [surefire-junit4-2.12.4.jar:2.12.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_45]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189) [surefire-api-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75) [surefire-booter-2.12.4.jar:2.12.4]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'route': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.myexample.camelissue.MyProcessor org.myexample.camelissue.MyRoute.myProcessor; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'processor' defined in class org.myexample.camelissue.ContextStartupTest$Context: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'camelContext' defined in class org.myexample.camelissue.ContextStartupTest$Context: Invocation of init method failed; nested exception is org.apache.camel.FailedToCreateRouteException: Failed to create route route1 at: >>> process[null] <<< in route: Route(route1)[[From[direct:foo]] -> [process[null]]] because of ref must be specified on: process[null]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1147) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:191) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:633) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932) ~[spring-context-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479) ~[spring-context-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:120) ~[spring-test-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100) ~[spring-test-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248) ~[spring-test-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64) ~[spring-test-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91) ~[spring-test-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	... 31 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.myexample.camelissue.MyProcessor org.myexample.camelissue.MyRoute.myProcessor; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'processor' defined in class org.myexample.camelissue.ContextStartupTest$Context: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'camelContext' defined in class org.myexample.camelissue.ContextStartupTest$Context: Invocation of init method failed; nested exception is org.apache.camel.FailedToCreateRouteException: Failed to create route route1 at: >>> process[null] <<< in route: Route(route1)[[From[direct:foo]] -> [process[null]]] because of ref must be specified on: process[null]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:517) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:286) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	... 47 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'processor' defined in class org.myexample.camelissue.ContextStartupTest$Context: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'camelContext' defined in class org.myexample.camelissue.ContextStartupTest$Context: Invocation of init method failed; nested exception is org.apache.camel.FailedToCreateRouteException: Failed to create route route1 at: >>> process[null] <<< in route: Route(route1)[[From[direct:foo]] -> [process[null]]] because of ref must be specified on: process[null]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:191) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:917) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:860) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:775) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:489) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	... 49 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'camelContext' defined in class org.myexample.camelissue.ContextStartupTest$Context: Invocation of init method failed; nested exception is org.apache.camel.FailedToCreateRouteException: Failed to create route route1 at: >>> process[null] <<< in route: Route(route1)[[From[direct:foo]] -> [process[null]]] because of ref must be specified on: process[null]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1513) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:441) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:431) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1182) ~[spring-context-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.apache.camel.spring.CamelBeanPostProcessor$1.getOrLookupCamelContext(CamelBeanPostProcessor.java:73) ~[camel-spring-2.13.2.jar:2.13.2]
+	at org.apache.camel.spring.CamelBeanPostProcessor$1$1.getCamelContext(CamelBeanPostProcessor.java:106) ~[camel-spring-2.13.2.jar:2.13.2]
+	at org.apache.camel.impl.CamelPostProcessorHelper.createInjectionProducerTemplate(CamelPostProcessorHelper.java:280) ~[camel-core-2.13.2.jar:2.13.2]
+	at org.apache.camel.impl.CamelPostProcessorHelper.getInjectionValue(CamelPostProcessorHelper.java:198) ~[camel-core-2.13.2.jar:2.13.2]
+	at org.apache.camel.impl.DefaultCamelBeanPostProcessor.injectField(DefaultCamelBeanPostProcessor.java:195) ~[camel-core-2.13.2.jar:2.13.2]
+	at org.apache.camel.impl.DefaultCamelBeanPostProcessor$1.doWith(DefaultCamelBeanPostProcessor.java:187) ~[camel-core-2.13.2.jar:2.13.2]
+	at org.apache.camel.util.ReflectionHelper.doWithFields(ReflectionHelper.java:73) ~[camel-core-2.13.2.jar:2.13.2]
+	at org.apache.camel.impl.DefaultCamelBeanPostProcessor.injectFields(DefaultCamelBeanPostProcessor.java:168) ~[camel-core-2.13.2.jar:2.13.2]
+	at org.apache.camel.impl.DefaultCamelBeanPostProcessor.postProcessBeforeInitialization(DefaultCamelBeanPostProcessor.java:82) ~[camel-core-2.13.2.jar:2.13.2]
+	at org.apache.camel.spring.CamelBeanPostProcessor.postProcessBeforeInitialization(CamelBeanPostProcessor.java:148) ~[camel-spring-2.13.2.jar:2.13.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:396) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1506) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	... 58 common frames omitted
+Caused by: org.apache.camel.FailedToCreateRouteException: Failed to create route route1 at: >>> process[null] <<< in route: Route(route1)[[From[direct:foo]] -> [process[null]]] because of ref must be specified on: process[null]
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:910) ~[camel-core-2.13.2.jar:2.13.2]
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:175) ~[camel-core-2.13.2.jar:2.13.2]
+	at org.apache.camel.impl.DefaultCamelContext.startRoute(DefaultCamelContext.java:780) ~[camel-core-2.13.2.jar:2.13.2]
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:2068) ~[camel-core-2.13.2.jar:2.13.2]
+	at org.apache.camel.impl.DefaultCamelContext.doStartCamel(DefaultCamelContext.java:1816) ~[camel-core-2.13.2.jar:2.13.2]
+	at org.apache.camel.impl.DefaultCamelContext.doStart(DefaultCamelContext.java:1683) ~[camel-core-2.13.2.jar:2.13.2]
+	at org.apache.camel.support.ServiceSupport.start(ServiceSupport.java:61) ~[camel-core-2.13.2.jar:2.13.2]
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:1651) ~[camel-core-2.13.2.jar:2.13.2]
+	at org.apache.camel.spring.SpringCamelContext.maybeStart(SpringCamelContext.java:254) ~[camel-spring-2.13.2.jar:2.13.2]
+	at org.apache.camel.spring.SpringCamelContext.afterPropertiesSet(SpringCamelContext.java:106) ~[camel-spring-2.13.2.jar:2.13.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1572) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1510) ~[spring-beans-3.2.10.RELEASE.jar:3.2.10.RELEASE]
+	... 80 common frames omitted
+Caused by: java.lang.IllegalArgumentException: ref must be specified on: process[null]
+	at org.apache.camel.util.ObjectHelper.notNull(ObjectHelper.java:316) ~[camel-core-2.13.2.jar:2.13.2]
+	at org.apache.camel.model.ProcessDefinition.createProcessor(ProcessDefinition.java:90) ~[camel-core-2.13.2.jar:2.13.2]
+	at org.apache.camel.model.ProcessorDefinition.makeProcessor(ProcessorDefinition.java:499) ~[camel-core-2.13.2.jar:2.13.2]
+	at org.apache.camel.model.ProcessorDefinition.addRoutes(ProcessorDefinition.java:212) ~[camel-core-2.13.2.jar:2.13.2]
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:907) ~[camel-core-2.13.2.jar:2.13.2]
+	... 91 common frames omitted
+DEBUG .c.s.DirtiesContextTestExecutionListener After test class: context [[TestContext@3c9e5e7e testClass = ContextStartupTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@57ccc11d testClass = ContextStartupTest, locations = '{}', classes = '{class org.myexample.camelissue.ContextStartupTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]], dirtiesContext [false].
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.317 sec <<< FAILURE!
+testContext(org.myexample.camelissue.ContextStartupTest)  Time elapsed: 0.964 sec  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
@@ -211,8 +410,8 @@ Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.310 s
-[INFO] Finished at: 2014-08-20T00:55:47+01:00
+[INFO] Total time: 3.501 s
+[INFO] Finished at: 2014-08-20T01:28:39+01:00
 [INFO] Final Memory: 16M/491M
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project camel-spring-issue: There are test failures.

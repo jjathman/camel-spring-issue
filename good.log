@@ -30,15 +30,95 @@
  T E S T S
 -------------------------------------------------------
 Running org.myexample.camelissue.ContextStartupTest
-DEBUG o.a.c.s.SpringCamelContext Set the application context classloader to: sun.misc.Launcher$AppClassLoader@7132c515
+DEBUG o.s.t.c.j.SpringJUnit4ClassRunner SpringJUnit4ClassRunner constructor called with [class org.myexample.camelissue.ContextStartupTest].
+DEBUG c.s.AbstractDelegatingSmartContextLoader Delegating to AnnotationConfigContextLoader to process context configuration [ContextConfigurationAttributes@6f173e3d declaringClass = 'org.myexample.camelissue.ContextStartupTest', locations = '{}', classes = '{class org.myexample.camelissue.ContextStartupTest$Context}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+DEBUG o.s.t.c.ContextLoaderUtils Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [org.myexample.camelissue.ContextStartupTest]
+DEBUG o.s.t.c.TestContextManager @TestExecutionListeners is not present for class [org.myexample.camelissue.ContextStartupTest]: using defaults.
+INFO  o.s.t.c.TestContextManager Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+DEBUG o.s.t.a.ProfileValueUtils Retrieved @ProfileValueSourceConfiguration [null] for test class [org.myexample.camelissue.ContextStartupTest]
+DEBUG o.s.t.a.ProfileValueUtils Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.myexample.camelissue.ContextStartupTest]
+DEBUG o.s.t.a.ProfileValueUtils Retrieved @ProfileValueSourceConfiguration [null] for test class [org.myexample.camelissue.ContextStartupTest]
+DEBUG o.s.t.a.ProfileValueUtils Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.myexample.camelissue.ContextStartupTest]
+DEBUG o.s.t.a.ProfileValueUtils Retrieved @ProfileValueSourceConfiguration [null] for test class [org.myexample.camelissue.ContextStartupTest]
+DEBUG o.s.t.a.ProfileValueUtils Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.myexample.camelissue.ContextStartupTest]
+DEBUG DependencyInjectionTestExecutionListener Performing dependency injection for test context [[TestContext@414dc149 testClass = ContextStartupTest, testInstance = org.myexample.camelissue.ContextStartupTest@57ccc11d, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@439a83f3 testClass = ContextStartupTest, locations = '{}', classes = '{class org.myexample.camelissue.ContextStartupTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+DEBUG c.s.AbstractDelegatingSmartContextLoader Delegating to AnnotationConfigContextLoader to load context from [MergedContextConfiguration@439a83f3 testClass = ContextStartupTest, locations = '{}', classes = '{class org.myexample.camelissue.ContextStartupTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+DEBUG o.s.t.c.s.AbstractGenericContextLoader Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@439a83f3 testClass = ContextStartupTest, locations = '{}', classes = '{class org.myexample.camelissue.ContextStartupTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+DEBUG o.s.c.env.StandardEnvironment Adding [systemProperties] PropertySource with lowest search precedence
+DEBUG o.s.c.env.StandardEnvironment Adding [systemEnvironment] PropertySource with lowest search precedence
+DEBUG o.s.c.env.StandardEnvironment Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+DEBUG o.s.t.c.s.AnnotationConfigContextLoader Registering annotated classes: {class org.myexample.camelissue.ContextStartupTest$Context}
+INFO  o.s.c.s.GenericApplicationContext Refreshing org.springframework.context.support.GenericApplicationContext@6b438186: startup date [Wed Aug 20 01:28:58 CEST 2014]; root of context hierarchy
+DEBUG o.s.c.s.GenericApplicationContext Bean factory for org.springframework.context.support.GenericApplicationContext@6b438186: org.springframework.beans.factory.support.DefaultListableBeanFactory@72c8c9ae: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,contextStartupTest.Context]; root of factory hierarchy
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG a.ConfigurationClassBeanDefinitionReader Registering bean definition for @Bean method org.myexample.camelissue.ContextStartupTest$Context.processor()
+DEBUG a.ConfigurationClassBeanDefinitionReader Registering bean definition for @Bean method org.myexample.camelissue.ContextStartupTest$Context.route()
+DEBUG a.ConfigurationClassBeanDefinitionReader Registering bean definition for @Bean method org.myexample.camelissue.ContextStartupTest$Context.camelContext()
+DEBUG a.ConfigurationClassBeanDefinitionReader Registering bean definition for @Bean method org.myexample.camelissue.ContextStartupTest$Context.camelBeanPostProcessor()
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'camelBeanPostProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'camelBeanPostProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'contextStartupTest.Context'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'contextStartupTest.Context'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'contextStartupTest.Context' to allow for resolving potential circular references
+INFO  o.s.c.s.GenericApplicationContext Bean 'contextStartupTest.Context' of type [class org.myexample.camelissue.ContextStartupTest$Context] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'contextStartupTest.Context'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'camelBeanPostProcessor' to allow for resolving potential circular references
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'camelBeanPostProcessor'
+DEBUG o.s.c.s.GenericApplicationContext Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@2bd040e8]
+DEBUG o.s.c.s.GenericApplicationContext Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@420783df]
+INFO  o.s.b.f.s.DefaultListableBeanFactory Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@72c8c9ae: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,contextStartupTest.Context,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,processor,route,camelContext,camelBeanPostProcessor]; root of factory hierarchy
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'contextStartupTest.Context'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'processor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'processor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'contextStartupTest.Context'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'processor' to allow for resolving potential circular references
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'camelContext'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'camelContext'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'contextStartupTest.Context'
+DEBUG o.a.c.s.SpringCamelContext Set the application context classloader to: sun.misc.Launcher$AppClassLoader@3c291fc2
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean 'route'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'route'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'contextStartupTest.Context'
+DEBUG o.s.b.f.a.InjectionMetadata Registered injected element on class [org.myexample.camelissue.MyRoute]: AutowiredFieldElement for private org.myexample.camelissue.MyProcessor org.myexample.camelissue.MyRoute.myProcessor
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'route' to allow for resolving potential circular references
+DEBUG o.s.b.f.a.InjectionMetadata Processing injected method of bean 'route': AutowiredFieldElement for private org.myexample.camelissue.MyProcessor org.myexample.camelissue.MyRoute.myProcessor
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning eagerly cached instance of singleton bean 'processor' that is not fully initialized yet - a consequence of a circular reference
+DEBUG f.a.AutowiredAnnotationBeanPostProcessor Autowiring by type from bean name 'route' to bean named 'processor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'route'
 DEBUG o.a.c.s.SpringCamelContext Adding routes from builder: Routes: []
-DEBUG o.a.c.s.SpringCamelContext Set the application context classloader to: sun.misc.Launcher$AppClassLoader@7132c515
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Eagerly caching bean 'camelContext' to allow for resolving potential circular references
+DEBUG o.a.c.s.SpringCamelContext Set the application context classloader to: sun.misc.Launcher$AppClassLoader@3c291fc2
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Invoking afterPropertiesSet() on bean with name 'camelContext'
 INFO  o.a.c.s.SpringCamelContext Apache Camel 2.13.2 (CamelContext: camel-1) is starting
-DEBUG o.a.c.s.SpringCamelContext Using ClassResolver=org.apache.camel.impl.DefaultClassResolver@20efeed2, PackageScanClassResolver=org.apache.camel.impl.DefaultPackageScanClassResolver@68282de2, ApplicationContextClassLoader=sun.misc.Launcher$AppClassLoader@7132c515
+DEBUG o.a.c.s.SpringCamelContext Using ClassResolver=org.apache.camel.impl.DefaultClassResolver@5a4ed947, PackageScanClassResolver=org.apache.camel.impl.DefaultPackageScanClassResolver@6e9af2a2, ApplicationContextClassLoader=sun.misc.Launcher$AppClassLoader@3c291fc2
 INFO  o.a.c.m.ManagedManagementStrategy JMX is enabled
-DEBUG o.a.c.m.DefaultManagementAgent Starting JMX agent on server: com.sun.jmx.mbeanserver.JmxMBeanServer@69317d48
+DEBUG o.a.c.m.DefaultManagementAgent Starting JMX agent on server: com.sun.jmx.mbeanserver.JmxMBeanServer@198d7173
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=context,name="camel-1"
-DEBUG o.a.c.s.TimerListenerManager Added TimerListener: org.apache.camel.management.mbean.ManagedCamelContext@40d6de8f
+DEBUG o.a.c.s.TimerListenerManager Added TimerListener: org.apache.camel.management.mbean.ManagedCamelContext@172011da
 DEBUG a.c.m.DefaultManagementLifecycleStrategy Registering 1 pre registered services
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name="spring-event"
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultTypeConverter
@@ -50,44 +130,49 @@ INFO  o.a.c.i.c.DefaultTypeConverter Loaded 179 type converters
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=EndpointRegistry
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultExecutorServiceManager
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=SharedProducerServicePool
-DEBUG o.a.c.i.SharedProducerServicePool Starting service pool: org.apache.camel.impl.SharedProducerServicePool@4c4fb2c0
+DEBUG o.a.c.i.SharedProducerServicePool Starting service pool: org.apache.camel.impl.SharedProducerServicePool@7d5b68d5
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultInflightRepository
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultShutdownStrategy
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultPackageScanClassResolver
-DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=eventnotifiers,name=EventNotifier(0x40fe8318)
-DEBUG o.a.c.s.SpringCamelContext Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@78df509f to resolve component with name: direct
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=eventnotifiers,name=EventNotifier(0x7e34886a)
+DEBUG o.a.c.s.SpringCamelContext Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@7fdb2f81 to resolve component with name: direct
 DEBUG o.a.c.i.DefaultComponentResolver Found component: direct in registry: null
 DEBUG o.a.c.i.DefaultComponentResolver Found component: direct via type: org.apache.camel.component.direct.DirectComponent via: META-INF/services/org/apache/camel/component/direct
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'org.apache.camel.component.direct.DirectComponent'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning eagerly cached instance of singleton bean 'camelContext' that is not fully initialized yet - a consequence of a circular reference
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'org.apache.camel.component.direct.DirectComponent'
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name="direct"
 DEBUG o.a.c.impl.DefaultComponent Creating endpoint uri=[direct://foo], path=[foo]
-DEBUG o.a.c.s.SpringCamelContext direct://foo converted to endpoint: Endpoint[direct://foo] by component: org.apache.camel.component.direct.DirectComponent@640f8e14
+DEBUG o.a.c.s.SpringCamelContext direct://foo converted to endpoint: Endpoint[direct://foo] by component: org.apache.camel.component.direct.DirectComponent@25905e0c
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name="direct://foo"
-DEBUG o.a.c.p.i.DefaultChannel Initialize channel for target: 'process[org.myexample.camelissue.MyProcessor@149675a1]'
+DEBUG o.a.c.p.i.DefaultChannel Initialize channel for target: 'process[org.myexample.camelissue.MyProcessor@c8485b4]'
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=tracer,name=BacklogTracer
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=tracer,name=BacklogDebugger
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=errorhandlers,name="DefaultErrorHandlerBuilder(ref:CamelDefaultErrorHandlerBuilder)"
 DEBUG o.a.c.impl.DefaultComponent Creating endpoint uri=[direct://bar], path=[bar]
-DEBUG o.a.c.s.SpringCamelContext direct://bar converted to endpoint: Endpoint[direct://bar] by component: org.apache.camel.component.direct.DirectComponent@640f8e14
+DEBUG o.a.c.s.SpringCamelContext direct://bar converted to endpoint: Endpoint[direct://bar] by component: org.apache.camel.component.direct.DirectComponent@25905e0c
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name="direct://bar"
-DEBUG o.a.c.s.SpringCamelContext Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@78df509f to resolve component with name: log
+DEBUG o.a.c.s.SpringCamelContext Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@7fdb2f81 to resolve component with name: log
 DEBUG o.a.c.i.DefaultComponentResolver Found component: log in registry: null
 DEBUG o.a.c.i.DefaultComponentResolver Found component: log via type: org.apache.camel.component.log.LogComponent via: META-INF/services/org/apache/camel/component/log
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating instance of bean 'org.apache.camel.component.log.LogComponent'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'org.apache.camel.component.log.LogComponent'
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name="log"
 DEBUG o.a.c.impl.DefaultComponent Creating endpoint uri=[log://testlog], path=[testlog]
-DEBUG o.a.c.s.SpringCamelContext log://testlog converted to endpoint: Endpoint[log://testlog] by component: org.apache.camel.component.log.LogComponent@487c8c05
+DEBUG o.a.c.s.SpringCamelContext log://testlog converted to endpoint: Endpoint[log://testlog] by component: org.apache.camel.component.log.LogComponent@5b1e32b6
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name="log://testlog"
 DEBUG o.a.c.p.i.DefaultChannel Initialize channel for target: 'To[log:testlog]'
 INFO  o.a.c.s.SpringCamelContext AllowUseOriginalMessage is enabled. If access to the original message is not needed, then its recommended to turn this option off as it may improve performance.
 INFO  o.a.c.s.SpringCamelContext StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
 DEBUG o.a.c.s.SpringCamelContext Warming up route id: route1 having autoStartup=true
 DEBUG o.a.camel.impl.RouteService Starting services on route: route1
-DEBUG o.a.camel.impl.RouteService Starting child service on route: route1 -> Channel[DelegateSync[org.myexample.camelissue.MyProcessor@149675a1]]
-DEBUG o.a.c.p.DefaultErrorHandler Redelivery enabled: false on error handler: DefaultErrorHandler[Instrumentation:process[DelegateSync[org.myexample.camelissue.MyProcessor@149675a1]]]
-DEBUG o.a.camel.impl.RouteService Starting child service on route: route1 -> DelegateSync[org.myexample.camelissue.MyProcessor@149675a1]
+DEBUG o.a.camel.impl.RouteService Starting child service on route: route1 -> Channel[DelegateSync[org.myexample.camelissue.MyProcessor@c8485b4]]
+DEBUG o.a.c.p.DefaultErrorHandler Redelivery enabled: false on error handler: DefaultErrorHandler[Instrumentation:process[DelegateSync[org.myexample.camelissue.MyProcessor@c8485b4]]]
+DEBUG o.a.camel.impl.RouteService Starting child service on route: route1 -> DelegateSync[org.myexample.camelissue.MyProcessor@c8485b4]
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=processors,name="process1"
-DEBUG o.a.camel.impl.RouteService Starting child service on route: route1 -> Channel[DelegateSync[org.myexample.camelissue.MyProcessor@149675a1]]
+DEBUG o.a.camel.impl.RouteService Starting child service on route: route1 -> Channel[DelegateSync[org.myexample.camelissue.MyProcessor@c8485b4]]
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=routes,name="route1"
-DEBUG o.a.c.s.TimerListenerManager Added TimerListener: org.apache.camel.management.mbean.ManagedSuspendableRoute@4287fb17
+DEBUG o.a.c.s.TimerListenerManager Added TimerListener: org.apache.camel.management.mbean.ManagedSuspendableRoute@14193836
 DEBUG o.a.c.s.SpringCamelContext Warming up route id: route2 having autoStartup=true
 DEBUG o.a.camel.impl.RouteService Starting services on route: route2
 DEBUG o.a.camel.impl.RouteService Starting child service on route: route2 -> Channel[sendTo(Endpoint[log://testlog])]
@@ -98,22 +183,40 @@ DEBUG o.a.camel.impl.RouteService Starting child service on route: route2 -> sen
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=processors,name="to1"
 DEBUG o.a.camel.impl.RouteService Starting child service on route: route2 -> Channel[sendTo(Endpoint[log://testlog])]
 DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=routes,name="route2"
-DEBUG o.a.c.s.TimerListenerManager Added TimerListener: org.apache.camel.management.mbean.ManagedSuspendableRoute@5a428d73
-DEBUG o.a.c.s.SpringCamelContext Route: route1 >>> EventDrivenConsumerRoute[Endpoint[direct://foo] -> Channel[DelegateSync[org.myexample.camelissue.MyProcessor@149675a1]]]
+DEBUG o.a.c.s.TimerListenerManager Added TimerListener: org.apache.camel.management.mbean.ManagedSuspendableRoute@644e63f5
+DEBUG o.a.c.s.SpringCamelContext Route: route1 >>> EventDrivenConsumerRoute[Endpoint[direct://foo] -> Channel[DelegateSync[org.myexample.camelissue.MyProcessor@c8485b4]]]
 DEBUG o.a.c.s.SpringCamelContext Starting consumer (order: 1000) on route: route1
-DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=consumers,name=DirectConsumer(0x5eed4107)
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=consumers,name=DirectConsumer(0x40e4daeb)
 INFO  o.a.c.s.SpringCamelContext Route: route1 started and consuming from: Endpoint[direct://foo]
 DEBUG o.a.c.s.SpringCamelContext Route: route2 >>> EventDrivenConsumerRoute[Endpoint[direct://bar] -> Channel[sendTo(Endpoint[log://testlog])]]
 DEBUG o.a.c.s.SpringCamelContext Starting consumer (order: 1001) on route: route2
-DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=consumers,name=DirectConsumer(0x5185cb87)
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=consumers,name=DirectConsumer(0xcebc727)
 INFO  o.a.c.s.SpringCamelContext Route: route2 started and consuming from: Endpoint[direct://bar]
 DEBUG a.c.m.DefaultManagementLifecycleStrategy Load performance statistics disabled
 INFO  o.a.c.s.SpringCamelContext Total 2 routes, of which 2 is started.
-INFO  o.a.c.s.SpringCamelContext Apache Camel 2.13.2 (CamelContext: camel-1) started in 0.357 seconds
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.275 sec
+INFO  o.a.c.s.SpringCamelContext Apache Camel 2.13.2 (CamelContext: camel-1) started in 0.370 seconds
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'camelContext'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Finished creating instance of bean 'processor'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'route'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'camelContext'
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'camelBeanPostProcessor'
+DEBUG o.s.c.s.GenericApplicationContext Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@15e178a0]
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'lifecycleProcessor'
+DEBUG o.s.c.e.PropertySourcesPropertyResolver Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+DEBUG o.s.c.e.PropertySourcesPropertyResolver Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+DEBUG o.s.c.e.PropertySourcesPropertyResolver Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+DEBUG o.s.t.c.CacheAwareContextLoaderDelegate Storing ApplicationContext in cache under key [[MergedContextConfiguration@439a83f3 testClass = ContextStartupTest, locations = '{}', classes = '{class org.myexample.camelissue.ContextStartupTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+DEBUG .c.s.DirtiesContextTestExecutionListener After test method: context [[TestContext@414dc149 testClass = ContextStartupTest, testInstance = org.myexample.camelissue.ContextStartupTest@57ccc11d, testMethod = testContext@ContextStartupTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@439a83f3 testClass = ContextStartupTest, locations = '{}', classes = '{class org.myexample.camelissue.ContextStartupTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]], class dirties context [false], class mode [null], method dirties context [false].
+DEBUG .c.s.DirtiesContextTestExecutionListener After test class: context [[TestContext@414dc149 testClass = ContextStartupTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@439a83f3 testClass = ContextStartupTest, locations = '{}', classes = '{class org.myexample.camelissue.ContextStartupTest$Context}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]], dirtiesContext [false].
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.356 sec
+INFO  o.s.c.s.GenericApplicationContext Closing org.springframework.context.support.GenericApplicationContext@6b438186: startup date [Wed Aug 20 01:28:58 CEST 2014]; root of context hierarchy
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Returning cached instance of singleton bean 'lifecycleProcessor'
+INFO  o.s.b.f.s.DefaultListableBeanFactory Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@72c8c9ae: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,contextStartupTest.Context,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,processor,route,camelContext,camelBeanPostProcessor]; root of factory hierarchy
+DEBUG o.s.b.f.s.DefaultListableBeanFactory Retrieved dependent beans for bean 'processor': [route]
+DEBUG o.s.b.f.s.DisposableBeanAdapter Invoking destroy() on bean with name 'camelContext'
 INFO  o.a.c.s.SpringCamelContext Apache Camel 2.13.2 (CamelContext: camel-1) is shutting down
 INFO  o.a.c.i.DefaultShutdownStrategy Starting to graceful shutdown 2 routes (timeout 300 seconds)
-DEBUG o.a.c.i.DefaultExecutorServiceManager Created new ThreadPool for source: org.apache.camel.impl.DefaultShutdownStrategy@664da27d with name: ShutdownTask. -> org.apache.camel.util.concurrent.RejectableThreadPoolExecutor@410baff7[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0][ShutdownTask]
+DEBUG o.a.c.i.DefaultExecutorServiceManager Created new ThreadPool for source: org.apache.camel.impl.DefaultShutdownStrategy@26ec47e9 with name: ShutdownTask. -> org.apache.camel.util.concurrent.RejectableThreadPoolExecutor@323c9353[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0][ShutdownTask]
 DEBUG o.a.c.i.DefaultShutdownStrategy There are 2 routes to shutdown
 DEBUG o.a.c.i.DefaultShutdownStrategy Route: route2 suspension deferred.
 DEBUG o.a.c.i.DefaultShutdownStrategy Route: route1 suspension deferred.
@@ -122,31 +225,31 @@ DEBUG o.a.c.i.DefaultShutdownStrategy Route: route1 preparing to shutdown comple
 INFO  o.a.c.i.DefaultShutdownStrategy Route: route2 shutdown complete, was consuming from: Endpoint[direct://bar]
 INFO  o.a.c.i.DefaultShutdownStrategy Route: route1 shutdown complete, was consuming from: Endpoint[direct://foo]
 INFO  o.a.c.i.DefaultShutdownStrategy Graceful shutdown of 2 routes completed in 0 seconds
-DEBUG o.a.c.s.TimerListenerManager Removed TimerListener: org.apache.camel.management.mbean.ManagedSuspendableRoute@5a428d73
+DEBUG o.a.c.s.TimerListenerManager Removed TimerListener: org.apache.camel.management.mbean.ManagedSuspendableRoute@644e63f5
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=routes,name="route2"
 DEBUG o.a.camel.impl.RouteService Stopping services on route: route2
 DEBUG o.a.camel.impl.RouteService Shutting down child service on route: route2 -> Consumer[direct://bar]
-DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=consumers,name=DirectConsumer(0x5185cb87)
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=consumers,name=DirectConsumer(0xcebc727)
 DEBUG o.a.camel.impl.RouteService Shutting down child service on route: route2 -> Channel[sendTo(Endpoint[log://testlog])]
-DEBUG o.a.c.i.SharedProducerServicePool Stopping service pool: org.apache.camel.impl.SharedProducerServicePool@4c4fb2c0
+DEBUG o.a.c.i.SharedProducerServicePool Stopping service pool: org.apache.camel.impl.SharedProducerServicePool@7d5b68d5
 DEBUG o.a.c.c.log.LogProducer Stopping producer: Producer[log://testlog]
 DEBUG o.a.camel.impl.RouteService Shutting down child service on route: route2 -> sendTo(Endpoint[log://testlog])
 DEBUG o.a.camel.impl.RouteService Shutting down child service on route: route2 -> Channel[sendTo(Endpoint[log://testlog])]
 DEBUG o.a.camel.impl.RouteService Shutting down services on route: route2
-DEBUG o.a.c.s.TimerListenerManager Removed TimerListener: org.apache.camel.management.mbean.ManagedSuspendableRoute@4287fb17
+DEBUG o.a.c.s.TimerListenerManager Removed TimerListener: org.apache.camel.management.mbean.ManagedSuspendableRoute@14193836
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=routes,name="route1"
 DEBUG o.a.camel.impl.RouteService Stopping services on route: route1
 DEBUG o.a.camel.impl.RouteService Shutting down child service on route: route1 -> Consumer[direct://foo]
-DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=consumers,name=DirectConsumer(0x5eed4107)
-DEBUG o.a.camel.impl.RouteService Shutting down child service on route: route1 -> Channel[DelegateSync[org.myexample.camelissue.MyProcessor@149675a1]]
-DEBUG o.a.camel.impl.RouteService Shutting down child service on route: route1 -> DelegateSync[org.myexample.camelissue.MyProcessor@149675a1]
-DEBUG o.a.camel.impl.RouteService Shutting down child service on route: route1 -> Channel[DelegateSync[org.myexample.camelissue.MyProcessor@149675a1]]
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=consumers,name=DirectConsumer(0x40e4daeb)
+DEBUG o.a.camel.impl.RouteService Shutting down child service on route: route1 -> Channel[DelegateSync[org.myexample.camelissue.MyProcessor@c8485b4]]
+DEBUG o.a.camel.impl.RouteService Shutting down child service on route: route1 -> DelegateSync[org.myexample.camelissue.MyProcessor@c8485b4]
+DEBUG o.a.camel.impl.RouteService Shutting down child service on route: route1 -> Channel[DelegateSync[org.myexample.camelissue.MyProcessor@c8485b4]]
 DEBUG o.a.camel.impl.RouteService Shutting down services on route: route1
-DEBUG o.a.c.s.TimerListenerManager Removed TimerListener: org.apache.camel.management.mbean.ManagedCamelContext@3679ac99
+DEBUG o.a.c.s.TimerListenerManager Removed TimerListener: org.apache.camel.management.mbean.ManagedCamelContext@61d60df3
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=context,name="camel-1"
-DEBUG o.a.c.i.DefaultExecutorServiceManager Forcing shutdown of ExecutorService: org.apache.camel.util.concurrent.RejectableThreadPoolExecutor@410baff7[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1][ShutdownTask]
+DEBUG o.a.c.i.DefaultExecutorServiceManager Forcing shutdown of ExecutorService: org.apache.camel.util.concurrent.RejectableThreadPoolExecutor@323c9353[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1][ShutdownTask]
 DEBUG o.a.c.i.DefaultInflightRepository Shutting down with no inflight exchanges.
-DEBUG o.a.camel.util.EventHelper Ignoring notifying event Stopped CamelContext: camel-1. The EventNotifier has not been started yet: org.apache.camel.impl.DefaultRuntimeEndpointRegistry@40fe8318
+DEBUG o.a.camel.util.EventHelper Ignoring notifying event Stopped CamelContext: camel-1. The EventNotifier has not been started yet: org.apache.camel.impl.DefaultRuntimeEndpointRegistry@7e34886a
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultTypeConverter
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=SharedProducerServicePool
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=processors,name="to1"
@@ -159,32 +262,25 @@ DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apa
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name="direct://bar"
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=tracer,name=BacklogTracer
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name="direct"
-DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name="log"
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name="log://testlog"
-DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=eventnotifiers,name=EventNotifier(0x40fe8318)
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=eventnotifiers,name=EventNotifier(0x7e34886a)
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name="log"
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=tracer,name=BacklogDebugger
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultInflightRepository
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultShutdownStrategy
 DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultExecutorServiceManager
 DEBUG o.a.c.u.IntrospectionSupport Clearing cache[size=0, hits=54, misses=37, evicted=0]
-INFO  o.a.c.s.SpringCamelContext Apache Camel 2.13.2 (CamelContext: camel-1) uptime 0.400 seconds
-INFO  o.a.c.s.SpringCamelContext Apache Camel 2.13.2 (CamelContext: camel-1) is shutdown in 0.018 seconds
+INFO  o.a.c.s.SpringCamelContext Apache Camel 2.13.2 (CamelContext: camel-1) uptime 0.417 seconds
+INFO  o.a.c.s.SpringCamelContext Apache Camel 2.13.2 (CamelContext: camel-1) is shutdown in 0.021 seconds
 
 Results :
 
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 
-[INFO] 
-[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ camel-spring-issue ---
-[INFO] Building jar: l:\codebase\camel-spring-issue\target\camel-spring-issue-0.1-SNAPSHOT.jar
-[INFO] 
-[INFO] --- maven-install-plugin:2.4:install (default-install) @ camel-spring-issue ---
-[INFO] Installing l:\codebase\camel-spring-issue\target\camel-spring-issue-0.1-SNAPSHOT.jar to L:\repository\org\myexample\camel-spring-issue\0.1-SNAPSHOT\camel-spring-issue-0.1-SNAPSHOT.jar
-[INFO] Installing l:\codebase\camel-spring-issue\pom.xml to L:\repository\org\myexample\camel-spring-issue\0.1-SNAPSHOT\camel-spring-issue-0.1-SNAPSHOT.pom
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.612 s
-[INFO] Finished at: 2014-08-20T00:56:05+01:00
-[INFO] Final Memory: 18M/491M
+[INFO] Total time: 3.495 s
+[INFO] Finished at: 2014-08-20T01:28:59+01:00
+[INFO] Final Memory: 16M/491M
 [INFO] ------------------------------------------------------------------------
