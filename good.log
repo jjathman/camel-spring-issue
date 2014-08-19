@@ -1,0 +1,190 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building camel-spring-issue 0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ camel-spring-issue ---
+[INFO] Deleting l:\codebase\camel-spring-issue\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ camel-spring-issue ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory l:\codebase\camel-spring-issue\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ camel-spring-issue ---
+[INFO] Compiling 2 source files to l:\codebase\camel-spring-issue\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ camel-spring-issue ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ camel-spring-issue ---
+[INFO] Compiling 1 source file to l:\codebase\camel-spring-issue\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ camel-spring-issue ---
+[INFO] Surefire report directory: l:\codebase\camel-spring-issue\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.myexample.camelissue.ContextStartupTest
+DEBUG o.a.c.s.SpringCamelContext Set the application context classloader to: sun.misc.Launcher$AppClassLoader@7132c515
+DEBUG o.a.c.s.SpringCamelContext Adding routes from builder: Routes: []
+DEBUG o.a.c.s.SpringCamelContext Set the application context classloader to: sun.misc.Launcher$AppClassLoader@7132c515
+INFO  o.a.c.s.SpringCamelContext Apache Camel 2.13.2 (CamelContext: camel-1) is starting
+DEBUG o.a.c.s.SpringCamelContext Using ClassResolver=org.apache.camel.impl.DefaultClassResolver@20efeed2, PackageScanClassResolver=org.apache.camel.impl.DefaultPackageScanClassResolver@68282de2, ApplicationContextClassLoader=sun.misc.Launcher$AppClassLoader@7132c515
+INFO  o.a.c.m.ManagedManagementStrategy JMX is enabled
+DEBUG o.a.c.m.DefaultManagementAgent Starting JMX agent on server: com.sun.jmx.mbeanserver.JmxMBeanServer@69317d48
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=context,name="camel-1"
+DEBUG o.a.c.s.TimerListenerManager Added TimerListener: org.apache.camel.management.mbean.ManagedCamelContext@40d6de8f
+DEBUG a.c.m.DefaultManagementLifecycleStrategy Registering 1 pre registered services
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name="spring-event"
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultTypeConverter
+DEBUG o.a.c.i.c.AnnotationTypeConverterLoader Found 3 packages with 15 @Converter classes to load
+DEBUG o.a.c.i.c.AnnotationTypeConverterLoader Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/L:/repository/org/apache/camel/camel-core/2.13.2/camel-core-2.13.2.jar!/META-INF/services/org/apache/camel/TypeConverter
+DEBUG o.a.c.i.c.AnnotationTypeConverterLoader Loading file META-INF/services/org/apache/camel/TypeConverter to retrieve list of packages, from url: jar:file:/L:/repository/org/apache/camel/camel-spring/2.13.2/camel-spring-2.13.2.jar!/META-INF/services/org/apache/camel/TypeConverter
+DEBUG o.a.c.i.c.AnnotationTypeConverterLoader Loaded 1 @Converter classes
+INFO  o.a.c.i.c.DefaultTypeConverter Loaded 179 type converters
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=EndpointRegistry
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultExecutorServiceManager
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=SharedProducerServicePool
+DEBUG o.a.c.i.SharedProducerServicePool Starting service pool: org.apache.camel.impl.SharedProducerServicePool@4c4fb2c0
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultInflightRepository
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultShutdownStrategy
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultPackageScanClassResolver
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=eventnotifiers,name=EventNotifier(0x40fe8318)
+DEBUG o.a.c.s.SpringCamelContext Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@78df509f to resolve component with name: direct
+DEBUG o.a.c.i.DefaultComponentResolver Found component: direct in registry: null
+DEBUG o.a.c.i.DefaultComponentResolver Found component: direct via type: org.apache.camel.component.direct.DirectComponent via: META-INF/services/org/apache/camel/component/direct
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name="direct"
+DEBUG o.a.c.impl.DefaultComponent Creating endpoint uri=[direct://foo], path=[foo]
+DEBUG o.a.c.s.SpringCamelContext direct://foo converted to endpoint: Endpoint[direct://foo] by component: org.apache.camel.component.direct.DirectComponent@640f8e14
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name="direct://foo"
+DEBUG o.a.c.p.i.DefaultChannel Initialize channel for target: 'process[org.myexample.camelissue.MyProcessor@149675a1]'
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=tracer,name=BacklogTracer
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=tracer,name=BacklogDebugger
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=errorhandlers,name="DefaultErrorHandlerBuilder(ref:CamelDefaultErrorHandlerBuilder)"
+DEBUG o.a.c.impl.DefaultComponent Creating endpoint uri=[direct://bar], path=[bar]
+DEBUG o.a.c.s.SpringCamelContext direct://bar converted to endpoint: Endpoint[direct://bar] by component: org.apache.camel.component.direct.DirectComponent@640f8e14
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name="direct://bar"
+DEBUG o.a.c.s.SpringCamelContext Using ComponentResolver: org.apache.camel.impl.DefaultComponentResolver@78df509f to resolve component with name: log
+DEBUG o.a.c.i.DefaultComponentResolver Found component: log in registry: null
+DEBUG o.a.c.i.DefaultComponentResolver Found component: log via type: org.apache.camel.component.log.LogComponent via: META-INF/services/org/apache/camel/component/log
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name="log"
+DEBUG o.a.c.impl.DefaultComponent Creating endpoint uri=[log://testlog], path=[testlog]
+DEBUG o.a.c.s.SpringCamelContext log://testlog converted to endpoint: Endpoint[log://testlog] by component: org.apache.camel.component.log.LogComponent@487c8c05
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name="log://testlog"
+DEBUG o.a.c.p.i.DefaultChannel Initialize channel for target: 'To[log:testlog]'
+INFO  o.a.c.s.SpringCamelContext AllowUseOriginalMessage is enabled. If access to the original message is not needed, then its recommended to turn this option off as it may improve performance.
+INFO  o.a.c.s.SpringCamelContext StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+DEBUG o.a.c.s.SpringCamelContext Warming up route id: route1 having autoStartup=true
+DEBUG o.a.camel.impl.RouteService Starting services on route: route1
+DEBUG o.a.camel.impl.RouteService Starting child service on route: route1 -> Channel[DelegateSync[org.myexample.camelissue.MyProcessor@149675a1]]
+DEBUG o.a.c.p.DefaultErrorHandler Redelivery enabled: false on error handler: DefaultErrorHandler[Instrumentation:process[DelegateSync[org.myexample.camelissue.MyProcessor@149675a1]]]
+DEBUG o.a.camel.impl.RouteService Starting child service on route: route1 -> DelegateSync[org.myexample.camelissue.MyProcessor@149675a1]
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=processors,name="process1"
+DEBUG o.a.camel.impl.RouteService Starting child service on route: route1 -> Channel[DelegateSync[org.myexample.camelissue.MyProcessor@149675a1]]
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=routes,name="route1"
+DEBUG o.a.c.s.TimerListenerManager Added TimerListener: org.apache.camel.management.mbean.ManagedSuspendableRoute@4287fb17
+DEBUG o.a.c.s.SpringCamelContext Warming up route id: route2 having autoStartup=true
+DEBUG o.a.camel.impl.RouteService Starting services on route: route2
+DEBUG o.a.camel.impl.RouteService Starting child service on route: route2 -> Channel[sendTo(Endpoint[log://testlog])]
+DEBUG o.a.c.c.log.LogProducer Starting producer: Producer[log://testlog]
+DEBUG o.a.camel.impl.ProducerCache Adding to producer cache with key: Endpoint[log://testlog] for producer: Producer[log://testlog]
+DEBUG o.a.c.p.DefaultErrorHandler Redelivery enabled: false on error handler: DefaultErrorHandler[Instrumentation:to[sendTo(Endpoint[log://testlog])]]
+DEBUG o.a.camel.impl.RouteService Starting child service on route: route2 -> sendTo(Endpoint[log://testlog])
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=processors,name="to1"
+DEBUG o.a.camel.impl.RouteService Starting child service on route: route2 -> Channel[sendTo(Endpoint[log://testlog])]
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=routes,name="route2"
+DEBUG o.a.c.s.TimerListenerManager Added TimerListener: org.apache.camel.management.mbean.ManagedSuspendableRoute@5a428d73
+DEBUG o.a.c.s.SpringCamelContext Route: route1 >>> EventDrivenConsumerRoute[Endpoint[direct://foo] -> Channel[DelegateSync[org.myexample.camelissue.MyProcessor@149675a1]]]
+DEBUG o.a.c.s.SpringCamelContext Starting consumer (order: 1000) on route: route1
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=consumers,name=DirectConsumer(0x5eed4107)
+INFO  o.a.c.s.SpringCamelContext Route: route1 started and consuming from: Endpoint[direct://foo]
+DEBUG o.a.c.s.SpringCamelContext Route: route2 >>> EventDrivenConsumerRoute[Endpoint[direct://bar] -> Channel[sendTo(Endpoint[log://testlog])]]
+DEBUG o.a.c.s.SpringCamelContext Starting consumer (order: 1001) on route: route2
+DEBUG o.a.c.m.DefaultManagementAgent Registered MBean with ObjectName: org.apache.camel:context=camel-1,type=consumers,name=DirectConsumer(0x5185cb87)
+INFO  o.a.c.s.SpringCamelContext Route: route2 started and consuming from: Endpoint[direct://bar]
+DEBUG a.c.m.DefaultManagementLifecycleStrategy Load performance statistics disabled
+INFO  o.a.c.s.SpringCamelContext Total 2 routes, of which 2 is started.
+INFO  o.a.c.s.SpringCamelContext Apache Camel 2.13.2 (CamelContext: camel-1) started in 0.357 seconds
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.275 sec
+INFO  o.a.c.s.SpringCamelContext Apache Camel 2.13.2 (CamelContext: camel-1) is shutting down
+INFO  o.a.c.i.DefaultShutdownStrategy Starting to graceful shutdown 2 routes (timeout 300 seconds)
+DEBUG o.a.c.i.DefaultExecutorServiceManager Created new ThreadPool for source: org.apache.camel.impl.DefaultShutdownStrategy@664da27d with name: ShutdownTask. -> org.apache.camel.util.concurrent.RejectableThreadPoolExecutor@410baff7[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0][ShutdownTask]
+DEBUG o.a.c.i.DefaultShutdownStrategy There are 2 routes to shutdown
+DEBUG o.a.c.i.DefaultShutdownStrategy Route: route2 suspension deferred.
+DEBUG o.a.c.i.DefaultShutdownStrategy Route: route1 suspension deferred.
+DEBUG o.a.c.i.DefaultShutdownStrategy Route: route2 preparing to shutdown complete.
+DEBUG o.a.c.i.DefaultShutdownStrategy Route: route1 preparing to shutdown complete.
+INFO  o.a.c.i.DefaultShutdownStrategy Route: route2 shutdown complete, was consuming from: Endpoint[direct://bar]
+INFO  o.a.c.i.DefaultShutdownStrategy Route: route1 shutdown complete, was consuming from: Endpoint[direct://foo]
+INFO  o.a.c.i.DefaultShutdownStrategy Graceful shutdown of 2 routes completed in 0 seconds
+DEBUG o.a.c.s.TimerListenerManager Removed TimerListener: org.apache.camel.management.mbean.ManagedSuspendableRoute@5a428d73
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=routes,name="route2"
+DEBUG o.a.camel.impl.RouteService Stopping services on route: route2
+DEBUG o.a.camel.impl.RouteService Shutting down child service on route: route2 -> Consumer[direct://bar]
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=consumers,name=DirectConsumer(0x5185cb87)
+DEBUG o.a.camel.impl.RouteService Shutting down child service on route: route2 -> Channel[sendTo(Endpoint[log://testlog])]
+DEBUG o.a.c.i.SharedProducerServicePool Stopping service pool: org.apache.camel.impl.SharedProducerServicePool@4c4fb2c0
+DEBUG o.a.c.c.log.LogProducer Stopping producer: Producer[log://testlog]
+DEBUG o.a.camel.impl.RouteService Shutting down child service on route: route2 -> sendTo(Endpoint[log://testlog])
+DEBUG o.a.camel.impl.RouteService Shutting down child service on route: route2 -> Channel[sendTo(Endpoint[log://testlog])]
+DEBUG o.a.camel.impl.RouteService Shutting down services on route: route2
+DEBUG o.a.c.s.TimerListenerManager Removed TimerListener: org.apache.camel.management.mbean.ManagedSuspendableRoute@4287fb17
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=routes,name="route1"
+DEBUG o.a.camel.impl.RouteService Stopping services on route: route1
+DEBUG o.a.camel.impl.RouteService Shutting down child service on route: route1 -> Consumer[direct://foo]
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=consumers,name=DirectConsumer(0x5eed4107)
+DEBUG o.a.camel.impl.RouteService Shutting down child service on route: route1 -> Channel[DelegateSync[org.myexample.camelissue.MyProcessor@149675a1]]
+DEBUG o.a.camel.impl.RouteService Shutting down child service on route: route1 -> DelegateSync[org.myexample.camelissue.MyProcessor@149675a1]
+DEBUG o.a.camel.impl.RouteService Shutting down child service on route: route1 -> Channel[DelegateSync[org.myexample.camelissue.MyProcessor@149675a1]]
+DEBUG o.a.camel.impl.RouteService Shutting down services on route: route1
+DEBUG o.a.c.s.TimerListenerManager Removed TimerListener: org.apache.camel.management.mbean.ManagedCamelContext@3679ac99
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=context,name="camel-1"
+DEBUG o.a.c.i.DefaultExecutorServiceManager Forcing shutdown of ExecutorService: org.apache.camel.util.concurrent.RejectableThreadPoolExecutor@410baff7[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1][ShutdownTask]
+DEBUG o.a.c.i.DefaultInflightRepository Shutting down with no inflight exchanges.
+DEBUG o.a.camel.util.EventHelper Ignoring notifying event Stopped CamelContext: camel-1. The EventNotifier has not been started yet: org.apache.camel.impl.DefaultRuntimeEndpointRegistry@40fe8318
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultTypeConverter
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=SharedProducerServicePool
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=processors,name="to1"
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name="direct://foo"
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=EndpointRegistry
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultPackageScanClassResolver
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=errorhandlers,name="DefaultErrorHandlerBuilder(ref:CamelDefaultErrorHandlerBuilder)"
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=processors,name="process1"
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name="spring-event"
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name="direct://bar"
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=tracer,name=BacklogTracer
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name="direct"
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=components,name="log"
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=endpoints,name="log://testlog"
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=eventnotifiers,name=EventNotifier(0x40fe8318)
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=tracer,name=BacklogDebugger
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultInflightRepository
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultShutdownStrategy
+DEBUG o.a.c.m.DefaultManagementAgent Unregistered MBean with ObjectName: org.apache.camel:context=camel-1,type=services,name=DefaultExecutorServiceManager
+DEBUG o.a.c.u.IntrospectionSupport Clearing cache[size=0, hits=54, misses=37, evicted=0]
+INFO  o.a.c.s.SpringCamelContext Apache Camel 2.13.2 (CamelContext: camel-1) uptime 0.400 seconds
+INFO  o.a.c.s.SpringCamelContext Apache Camel 2.13.2 (CamelContext: camel-1) is shutdown in 0.018 seconds
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ camel-spring-issue ---
+[INFO] Building jar: l:\codebase\camel-spring-issue\target\camel-spring-issue-0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ camel-spring-issue ---
+[INFO] Installing l:\codebase\camel-spring-issue\target\camel-spring-issue-0.1-SNAPSHOT.jar to L:\repository\org\myexample\camel-spring-issue\0.1-SNAPSHOT\camel-spring-issue-0.1-SNAPSHOT.jar
+[INFO] Installing l:\codebase\camel-spring-issue\pom.xml to L:\repository\org\myexample\camel-spring-issue\0.1-SNAPSHOT\camel-spring-issue-0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.612 s
+[INFO] Finished at: 2014-08-20T00:56:05+01:00
+[INFO] Final Memory: 18M/491M
+[INFO] ------------------------------------------------------------------------
