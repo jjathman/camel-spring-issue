@@ -2,9 +2,7 @@ package org.myexample.camelissue;
 
 import org.apache.camel.*;
 import org.apache.camel.builder.ExchangeBuilder;
-import org.springframework.stereotype.Component;
 
-@Component
 public class MyProcessor implements Processor {
 
     @Produce
